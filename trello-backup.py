@@ -68,13 +68,17 @@ def main():
 		'cards':'all',
 		'card_fields':'all',
 		'card_attachments':'true',
+                'card_customFieldItems':'true',
 		'lists':'all',
 		'list_fields':'all',
+                'labels':'all',
+                'customFields':'true',
 		'members':'all',
 		'member_fields':'all',
 		'checklists':'all',
 		'checklist_fields':'all',
 		'organization':'false',
+                'pluginData':'true'
 	}
 	boards = requests.get(API_URL + "members/me/boards", params=boardsPayload)
 	try:
