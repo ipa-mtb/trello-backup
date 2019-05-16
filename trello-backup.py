@@ -111,7 +111,7 @@ def boardFilename(output_dir, board, epoch_time):
 	boardName = sanitize(board["name"])
 
 	formatted = u'{0}-{1}_'.format(organization_id, boardName)
-	filename = formatted + epoch_time + '.json'
+	filename = formatted + '.json'
 	return os.path.join(output_dir, filename)
 
 def sanitize(name):
